@@ -1,0 +1,5 @@
+---
+- hosts: dbsrvr
+  roles:
+    - mysql
+
