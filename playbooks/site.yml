@@ -1,9 +1,9 @@
--name:  import common file
+- name: import common file
   import_playbook: ../static-assignments/common.yml
 
 - name: import env-vars file
   import_playbook: ../dynamic-assignment/env-vars.yml
- 
+
 - name: import database file
   import_playbook: ../static-assignments/db.yml
 
@@ -11,11 +11,6 @@
   import_playbook: ../static-assignments/uat-webservers.yml
 
 - name: Loadbalancers assignment
-    hosts: lb
+  hosts: lb
   import_playbook: ../static-assignments/loadbalancers.yml
-    when: load_balancer_is_required
-
-
-
-
-
+  when: load_balancer_is_required
