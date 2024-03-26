@@ -1,0 +1,14 @@
+---
+- hosts: uat-webservers
+  become: true
+  roles:
+    - webserver
+
+
+
+
+
+
+
+
+

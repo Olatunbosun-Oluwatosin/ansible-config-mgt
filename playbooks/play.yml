@@ -1,0 +1,26 @@
+---
+- name: update web, and nfs servers
+  hosts: webservers, nfs 
+  become: yes
+  tasks:
+    - name: ensure wireshark is installed 
+      yum:
+        name: wireshark
+        state: present
+
+    - name: ensure wireshark is at latest version
+      yum:
+        name: wireshark
+        state: latest
+
+
+
+    
+
+    
+
+
+
+
+
+

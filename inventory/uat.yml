@@ -1,0 +1,32 @@
+---
+uat-webservers:
+  hosts:
+    web01-uat:
+      ansible_host: 172.31.8.45
+    web02-uat:
+      ansible_host: 172.31.13.169
+  children:
+    webservers:
+      hosts:
+        web01-uat:
+        web02-uat:
+  vars:
+    ansible_user: ec2-user
+    ansible_ssh_private_key_file: sshkey.pem
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
