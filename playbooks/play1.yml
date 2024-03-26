@@ -1,13 +1,4 @@
 ---
-- name: update web and lb servers
-  hosts: webservers, lb
-  become: yes
-  tasks:
-    - name: ensure wireshark is at the latest version
-      yum:
-        name: wireshark
-        state: latest
-   
 - name: update db server
   hosts: db
   become: yes
@@ -20,16 +11,3 @@
       apt:
         name: wireshark
         state: latest
-
-
-
-
-
-
-
-
-
-
-
-
-

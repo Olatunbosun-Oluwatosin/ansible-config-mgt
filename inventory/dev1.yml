@@ -1,0 +1,14 @@
+all:
+  hosts:
+    db:
+      ansible_host: 172.31.42.192
+      ansible_user: ubuntu
+      ansible_ssh_private_key_file: sshkey.pem  
+
+
+
+
+
+
+
+
